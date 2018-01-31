@@ -15,7 +15,7 @@
 @property(nonatomic, strong) NSString *message;
 @property(nonatomic, strong) NSString *title;
 @property(nonatomic, strong) NSString *removeImageStr;
-@property(nonatomic, copy) void(^clickBtn)(NSInteger index);
+@property(nonatomic, copy) void(^tapCallback)(NSInteger index);
 @property(nonatomic, copy) void(^close)(void);
 
 - (instancetype)initWithFrame:(CGRect)frame

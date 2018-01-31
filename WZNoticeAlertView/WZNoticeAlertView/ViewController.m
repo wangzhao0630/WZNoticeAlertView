@@ -27,7 +27,20 @@
     self.alertView2.close = ^{
         [weaKself.alertView2 remove];
     };
-    
+    self.alertView1.tapCallback = ^(NSInteger index) {
+        if (index == 0) {
+            NSLog(@"点击了第一个");
+        }else if (index == 1){
+            NSLog(@"点击了第二个");
+        }
+    };
+    self.alertView2.tapCallback = ^(NSInteger index) {
+        if (index == 0) {
+            NSLog(@"点击了第一个");
+        }else if (index == 1){
+            NSLog(@"点击了第二个");
+        }
+    };
 }
 - (WZNoticeAlertView *)alertView1{
     if (_alertView1 == nil) {

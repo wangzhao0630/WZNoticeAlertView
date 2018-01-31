@@ -202,12 +202,14 @@
 
 - (void)click:(UIButton *)btn{
     if (btn == nextBtn) {
-        if (self.clickBtn) {
-            self.clickBtn(1);
+        if (self.tapCallback != nil) {
+            self.tapCallback(1);
         }
     }else if (btn == firsBtn){
-        if (self.clickBtn) {
-            self.clickBtn(0);
+        
+        
+        if (self.tapCallback != nil) {
+            self.tapCallback(0);
         }
         
     }else if (btn == self.removeBtn){
